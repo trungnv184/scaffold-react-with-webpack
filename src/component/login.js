@@ -1,12 +1,6 @@
 import React from "react";
-class Test {
-  constructor() {
-    this.a = 4;
-  }
-}
 const Login = () => {
-  const x = new Test();
-  return <h1>Here is login page {x.a}</h1>;
+  return <h1 style={{ color: "red" }}>Here is login page</h1>;
 };
 
 export default Login;
