@@ -1,9 +1,9 @@
 import React from "react";
-import Login from "./component/login";
+import Timer from "./component/Timer";
 const App = () => {
   return (
     <>
-      <Login />
+      <Timer times={5} />
     </>
   );
 };
