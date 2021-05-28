@@ -7,11 +7,15 @@ const Timer = ({ times }) => {
     if (count >= maxCount) {
       return;
     }
+    console.log("start Layout Effect");
     const timerId = setTimeout(() => {
       setCount((count) => count + 1);
     }, 1000);
 
-    return () => clearTimeout(timerId);
+    return () => {
+      console.log("Clean Layout Effect");
+      clearTimeout(timerId);
+    };
   }, [count]);
 
   return <p>Timer: {count}</p>;
