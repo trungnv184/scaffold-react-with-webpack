@@ -18,7 +18,7 @@ To explain a little bit about some detailed packages:
 
 - The index.html file be described
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -60,7 +60,7 @@ and how to get all defined values inside the .env file we should use like the co
 
 - in the webpack.config.js
 
-```
+```js
 const dotenv = require("dotenv").config({
     path: path.resolve(__dirname, ".env")
 });
